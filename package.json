@@ -1,6 +1,6 @@
 {
   "name": "@ogbodo/react-native-image-cache",
-  "version": "3.1.1",
+  "version": "3.1.2",
   "access": "public",
   "description": "React Native image file system caching for iOS and Android",
   "main": "lib/commonjs/index.js",
@@ -84,5 +84,8 @@
       "module",
       "typescript"
     ]
+  },
+  "dependencies": {
+    "lefthook-darwin-arm64": "1.6.11"
   }
 }

@@ -189,7 +189,7 @@ const CachedImage = (props: IProps & typeof defaultProps) => {
     ...rest
   } = props;
 
-  const isImageReady = useMemo(() => !!uri, [uri, propsSource]);
+  const isImageReady = useMemo(() => isRemoteImage(propsSource), [propsSource]);
 
   const imageSource = useMemo(() => {
     if (error || !uri) {
